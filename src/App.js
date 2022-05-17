@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Logo from './components/logo';
+import Links from './components/links';
+import Button from './components/button';
 
 function App() {
+  let arr=["Services","Projects","About"];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Logo/>
+     <Links arr={arr}/>
+     <Button/>
     </div>
   );
 }
